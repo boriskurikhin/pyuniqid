@@ -13,6 +13,7 @@ def __get_netifaces():
         if ni == 'lo' or netifaces.AF_LINK not in nif:
             continue
         return netifaces.ifaddresses(ni)[netifaces.AF_LINK][0]['addr']
+    return '0'
 def __get_mac():
     mac = __get_netifaces()
     return int(''.join(list(filter(lambda x: x.isdigit(), list(mac)))))
