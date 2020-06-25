@@ -1,1 +1,1 @@
-from pyuniqid.uniqid import Uniqid
+from pyuniqid.uniqid import uniqid
