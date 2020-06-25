@@ -37,7 +37,7 @@ uniqid() -> "4n5pxq24kpiob12og9"
 uniqid('hello-') -> "hello-4n5pxq24kpiob12og9"
 uniqid('hello-', '-goodbye') -> "hello-4n5pxq24kpiob12og9-goodbye"
 
-// usage with suffix only
+# usage with suffix only
 uniqid('', '-goodbye') -> "4n5pxq24kpiob12og9-goodbye"
 ```
 
