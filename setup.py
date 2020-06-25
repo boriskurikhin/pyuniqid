@@ -5,7 +5,7 @@ setup(
     version = '0.1',
     license='MIT',
     description = 'A Unique Hexatridecimal ID generator',
-    long_description='A Unique Hexatridecimal ID generator'
+    long_description ='A Unique Hexatridecimal ID generator',
     author = 'Boris Skurikhin',
     author_email = 'boriskurikhin@gmail.com',
     url = 'https://github.com/boriskurikhin/pyuniqid',
