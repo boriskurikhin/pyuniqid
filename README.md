@@ -12,7 +12,7 @@ pip3 install pyuniqid
 ```python3
 from pyuniqid import uniqid
 
-print(uniqid()) // -> 17ps24e9kgckbv6a3e4
+print(uniqid()) # -> 17ps24e9kgckbv6a3e4
 ```
 
 ## Features
@@ -32,14 +32,13 @@ print(uniqid()) // -> 17ps24e9kgckbv6a3e4
 
 Generate 18 byte unique id's based on the time, process id and mac address. Works on multiple processes and machines.
 
-```js       "zu4850jkyfoxok"
+```python3
 uniqid() -> "4n5pxq24kpiob12og9"
 uniqid('hello-') -> "hello-4n5pxq24kpiob12og9"
 uniqid('hello-', '-goodbye') -> "hello-4n5pxq24kpiob12og9-goodbye"
 
 // usage with suffix only
 uniqid('', '-goodbye') -> "4n5pxq24kpiob12og9-goodbye"
-uniqid(undefined, '-goodbye') -> "4n5pxq24kpiob12og9-goodbye"
 ```
 
 ## **License**
