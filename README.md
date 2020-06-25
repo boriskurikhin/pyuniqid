@@ -30,7 +30,7 @@ print(uniqid()) # -> 17ps24e9kgckbv6a3e4
 
 #### **uniqid(** prefix _optional string_ , suffix _optional string_ **)**
 
-Generate 18 byte unique id's based on the time, process id and mac address. Works on multiple processes and machines.
+Generate unique ids based on the time, process id and mac address. Works on multiple processes and machines.
 
 ```python3
 uniqid() -> "4n5pxq24kpiob12og9"
