@@ -1,3 +1,5 @@
+![PyPI](https://img.shields.io/pypi/v/pyuniqid) ![PyPI - Downloads](https://img.shields.io/pypi/dm/pyuniqid)
+
 ### A Unique Hexatridecimal ID generator.
 
 It will always create unique id's based on the current time, process and machine name.
@@ -40,7 +42,6 @@ uniqid('hello-', '-goodbye') -> "hello-4n5pxq24kpiob12og9-goodbye"
 # usage with suffix only
 uniqid('', '-goodbye') -> "4n5pxq24kpiob12og9-goodbye"
 ```
-
 ## **License**
 
 (The MIT License)
