@@ -1,21 +1,28 @@
-from setuptools import setup, Extension
+from setuptools import setup
+
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name = 'pyuniqid',
-    packages = ['pyuniqid'],
-    version = '1.2',
+    name='pyuniqid',
+    packages=['pyuniqid'],
+    version='1.2',
     license='MIT',
-    description = 'A Unique Hexatridecimal ID generator',
+    description='A Unique Hexatridecimal ID generator',
     long_description=long_description,
     long_description_content_type="text/markdown",
-    author = 'Boris Skurikhin',
-    author_email = 'boriskurikhin@gmail.com',
-    url = 'https://github.com/boriskurikhin/pyuniqid',
-    download_url = 'https://github.com/boriskurikhin/pyuniqid/archive/v1.2.tar.gz',
-    keywords = ['unique', 'id', 'unique identifier', 'hexatridecimal', 'unique id', 'uniqid'],
+    author='Boris Skurikhin',
+    author_email='boriskurikhin@gmail.com',
+    url='https://github.com/boriskurikhin/pyuniqid',
+    download_url='https://github.com/boriskurikhin/pyuniqid/archive/v1.2.tar.gz',  # noqa
+    keywords=[
+        'unique',
+        'id',
+        'unique identifier',
+        'hexatridecimal',
+        'unique id',
+        'uniqid'],
     install_requires=[
         'netifaces',
         'numpy'
@@ -25,5 +32,5 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    python_requires='>=3.6',
+    python_requires='>=3.5',
 )

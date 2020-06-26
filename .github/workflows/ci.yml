@@ -1,0 +1,36 @@
+name: Python package
+
+on: push
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.5, 3.6, 3.7, 3.8]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install yapf
+          pip install -r requirements.txt
+
+        # Considering the nature of this project, the best way to test is to
+        # simply import the package and use it. If the interpreter returns errors
+        # then we know the build isn't working.
+        # The only "valid" test to run would be to ensure uniqueness, but this is
+        # something that is inherited from the nature of the code, so testing it
+        # is just unnecessary.
+      - name: Run on ${{ matrix.python-version }}
+        run: |
+          python -c "from pyuniqid import uniqid;print(uniqid())"
