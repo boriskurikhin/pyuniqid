@@ -2,7 +2,7 @@
 
 ### A Unique Hexatridecimal ID generator.
 
-It will always create unique id's based on the current time, process and machine name.
+Generates unique ids based on the current time, process and machine name.
 This package is an adaptation of a widely popular [node module of the same name](https://github.com/adamhalasz/uniqid).
 
 ```
