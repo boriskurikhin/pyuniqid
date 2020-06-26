@@ -18,7 +18,7 @@ def __get_mac():
     mac = __get_netifaces()
     return int(''.join(list(filter(lambda x: x.isdigit(), list(mac)))))
 def __get_time():
-    return str(time.time()).replace('.', '')[:13] #js equivalent
+    return int(time.time() * 1000)
 def __tob36(item):
     item_int = int(item)
     return base_repr(item_int, 36)
