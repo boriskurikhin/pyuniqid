@@ -14,7 +14,7 @@ pip3 install pyuniqid
 ```python3
 from pyuniqid import uniqid
 
-print(uniqid()) # -> 17ps24e9kgckbv6a3e4
+print(uniqid()) # -> 4n5pxq24kpiob12og9
 ```
 
 ## Features
