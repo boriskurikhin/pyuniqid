@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 setup(
     name = 'pyuniqid',
     packages = ['pyuniqid'],
-    version = '1.0',
+    version = '1.2',
     license='MIT',
     description = 'A Unique Hexatridecimal ID generator',
     long_description=long_description,
@@ -14,7 +14,7 @@ setup(
     author = 'Boris Skurikhin',
     author_email = 'boriskurikhin@gmail.com',
     url = 'https://github.com/boriskurikhin/pyuniqid',
-    download_url = 'https://github.com/boriskurikhin/pyuniqid/archive/v_01.1.zip',
+    download_url = 'https://github.com/boriskurikhin/pyuniqid/archive/v1.2.tar.gz',
     keywords = ['unique', 'id', 'unique identifier', 'hexatridecimal', 'unique id', 'uniqid'],
     install_requires=[
         'netifaces',
