@@ -1,4 +1,4 @@
-![PyPI](https://img.shields.io/pypi/v/pyuniqid) ![PyPI - Downloads](https://img.shields.io/pypi/dm/pyuniqid)
+[![PyPI](https://img.shields.io/pypi/v/pyuniqid)](https://pypi.org/project/pyuniqid) [![PyPI - Downloads](https://img.shields.io/pypi/dm/pyuniqid)](https://pypi.org/project/pyuniqid/#files) [![License](https://img.shields.io/github/license/boriskurikhin/pyuniqid)](https://raw.githubusercontent.com/boriskurikhin/pyuniqid/master/LICENSE)
 
 ### A Unique Hexatridecimal ID generator.
 
@@ -44,24 +44,4 @@ uniqid('', '-goodbye') -> "4n5pxq24kpiob12og9-goodbye"
 ```
 ## **License**
 
-(The MIT License)
-
-Copyright (c) 2020 [Boris Skurikhin](http://boriskurikhin.github.io) <boriskurikhin@gmail.com> 
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+[MIT License](https://raw.githubusercontent.com/boriskurikhin/pyuniqid/master/LICENSE)
