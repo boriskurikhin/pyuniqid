@@ -24,13 +24,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install yapf
           pip install -r requirements.txt
-
-        # Considering the nature of this project, the best way to test is to
-        # simply import the package and use it. If the interpreter returns errors
-        # then we know the build isn't working.
-        # The only "valid" test to run would be to ensure uniqueness, but this is
-        # something that is inherited from the nature of the code, so testing it
-        # is just unnecessary.
+          
       - name: Run on ${{ matrix.python-version }}
         run: |
           python -c "from pyuniqid import uniqid;print(uniqid())"
