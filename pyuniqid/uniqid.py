@@ -93,5 +93,6 @@ def uniqid(prefix='', postfix=''):
         prefix,
         __tob36(__get_mac()),
         __tob36(__get_pid()),
-        __tob36(__get_time()), postfix
+        __tob36(__get_time()),
+        postfix
     ]).lower()
