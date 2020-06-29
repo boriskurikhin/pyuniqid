@@ -15,7 +15,7 @@ setup(
     author='Boris Skurikhin',
     author_email='boriskurikhin@gmail.com',
     url='https://github.com/boriskurikhin/pyuniqid',
-    download_url='https://test.123',
+    download_url='https://github.com/boriskurikhin/pyuniqid/archive/v1.2.tar.gz',  # noqa
     keywords=[
         'unique',
         'id',
