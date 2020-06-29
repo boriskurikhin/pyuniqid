@@ -20,7 +20,9 @@ jobs:
 
     - name: Get tag and version
       id: util
-      run: echo "::set-output name=version::${GITHUB_REF:11}"
+      run: |
+        echo ${GITHUB_REF}
+        echo "::set-output name=version::${GITHUB_REF:10}"
 
     - name: Edit setup.py for new release
       env:
