@@ -22,15 +22,10 @@ jobs:
       id: util
       run: echo "::set-output name=version::$(echo $GITHUB_REF | sed -e s/'refs\/tags\/[a-zA-Z]*'/''/)"
 
-    - name: Check output
-      run: |
-        echo $GITHUB_REF
-        echo ${{ steps.util.outputs.version }}
-
     - name: Edit setup.py for new release
       env:
         VERSION: ${{ steps.util.outputs.version }}
-        DOWNLOAD_URL: https://github.com/${{ github.repo }}/archive/v${{ steps.util.outputs.version }}.tar.gz
+        DOWNLOAD_URL: https://github.com/${{ github.repository }}/archive/v${{ steps.util.outputs.version }}.tar.gz
       run: envsubst < .github/setup.py.tmpl > setup.py
 
     - name: Output setup.py
