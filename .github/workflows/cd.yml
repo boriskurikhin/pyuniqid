@@ -20,9 +20,12 @@ jobs:
 
     - name: Get tag and version
       id: util
+      run: echo "::set-output name=version::$(echo $GITHUB_REF | sed -e s/'refs\/tags\/[a-zA-Z]*'/''/)"
+
+    - name: Check output
       run: |
-        echo ${GITHUB_REF}
-        echo "::set-output name=version::${GITHUB_REF:10}"
+        echo $GITHUB_REF
+        echo ${{ steps.util.outputs.version }}
 
     - name: Edit setup.py for new release
       env:
