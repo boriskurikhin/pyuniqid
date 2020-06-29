@@ -20,12 +20,14 @@ jobs:
 
     - name: Get tag and version
       id: util
-      run: echo "::set-output name=version::$(echo $GITHUB_REF | sed -e s/'refs\/tags\/[a-zA-Z]*'/''/)"
+      run: |
+        echo "::set-output name=tag::${GITHUB_REF##*/}"
+        echo "::set-output name=version::$(echo $GITHUB_REF | sed -e s/'refs\/tags\/[a-zA-Z]*'/''/)"
 
     - name: Edit setup.py for new release
       env:
         VERSION: ${{ steps.util.outputs.version }}
-        DOWNLOAD_URL: https://github.com/${{ github.repository }}/archive/v${{ steps.util.outputs.version }}.tar.gz
+        DOWNLOAD_URL: https://github.com/${{ github.repository }}/archive/${{ steps.util.outputs.tag }}.tar.gz
       run: envsubst < .github/setup.py.tmpl > setup.py
 
     - name: Output setup.py
